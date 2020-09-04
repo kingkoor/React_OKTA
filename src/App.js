@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
 import SideBar from './components/layout/SideBar';
+import Body from './components/layout/Body';
 
 
 const App = () => {
@@ -25,7 +26,8 @@ const App = () => {
   return (
     <div className="App wrapper">
       <SideBar toggle={() => setIsOpen(!isOpen)} isOpen={isOpen} />
-      {/* <h1>{width}isssss{isOpen}</h1> */}
+      <Body toggle={() => setIsOpen(!isOpen)} isOpen={isOpen} />
+
 
     </div>
   );
